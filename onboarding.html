@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Define - Double-click any word for its meaning, build a vocabulary that sticks</title>
+<meta name="description" content="Double-click a word on any page for an instant definition, then save it to your personal vocab list.">
+<meta name="theme-color" content="#7c6cf0">
+<link rel="stylesheet" href="onboarding.css">
+</head>
+<body data-upgrade-url="">
+<div class="bg-fx"></div>
+<div class="bg-grid"></div>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="z"><b></b>.</span>
+    <span class="sep"></span>
+    <span class="prod" data-slot="extName" data-i18n="ext_name">Define</span>
+  </div>
+  <a class="ghlink" href="" target="_blank" rel="noopener"> <span class="arr">↗</span></a>
+</nav>
+<div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="stage" id="stage">
+
+    <section class="step active" data-step="1" data-next="Show me">
+    <div class="center">
+      <span class="kicker" data-i18n="s1_kicker">For readers who refuse to skip words</span>
+      <h1 data-slot="valueProp">You met a new word.<br><span class="em">Then you lost it.</span></h1>
+      <p class="lede">You could open a new tab, type the word, read the definition, and lose your place. So instead you guess from context and move on, and the word never becomes yours. Define puts the meaning one double-click away and remembers every word you look up.</p>
+            <div class="form-mock">
+        <div class="fm-stack s1"></div><div class="fm-stack s2"></div>
+        <div class="fm-top"><span class="fm-title">Reading without Define</span><span class="fm-count">every session</span></div>
+        <div class="fm-row"><span class="fm-label">Unknown word</span><div class="fm-input"><span class="ghost">guessed from context, wrong</span></div></div>
+        <div class="fm-row"><span class="fm-label">New tab lookup</span><div class="fm-input"><span class="ghost">lost your place in the article</span></div></div>
+        <div class="fm-row"><span class="fm-label">Word from Tuesday</span><div class="fm-input"><span class="ghost">already forgotten</span></div></div>
+      </div>
+      <div class="chips-row">
+        <span class="chip-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Your data stays on your device</span>
+        <span class="chip-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Works offline</span>
+        <span class="chip-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Manifest V3</span>
+        <span class="chip-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>No account needed</span>
+      </div>
+    </div>
+  </section>
+
+    <section class="step" data-step="2" data-role="demo-fill" data-next="Set my defaults">
+    <div class="center">
+      <span class="kicker" data-i18n="s2_kicker">Watch it work, simulated below</span>
+      <h2>Double-click. <span class="em">Understand.</span> Keep reading.</h2>
+      <p class="lede">The definition appears right over the page, with pronunciation and examples, and disappears when you keep reading. Press below to simulate looking up five words mid-article.</p>
+      <div class="ffform">
+        <div class="ffform-top"><span class="ffform-title">Words in an article</span><span class="ffcount" data-fill-count>0 of 5 filled</span></div>
+        <div class="ffrow" data-v="defined in place"><span class="fflabel">ephemeral</span><span class="ffval"><span class="ph">empty</span></span></div>
+        <div class="ffrow" data-v="defined in place"><span class="fflabel">sycophant</span><span class="ffval"><span class="ph">empty</span></span></div>
+        <div class="ffrow" data-v="defined, saved to vocab"><span class="fflabel">apocryphal</span><span class="ffval"><span class="ph">empty</span></span></div>
+        <div class="ffrow" data-v="defined in place"><span class="fflabel">intransigent</span><span class="ffval"><span class="ph">empty</span></span></div>
+        <div class="ffrow" data-v="defined, saved to vocab"><span class="fflabel">perspicacious</span><span class="ffval"><span class="ph">empty</span></span></div>
+        <button class="cta demo-btn" data-demo-fill style="margin-top:18px;width:100%">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+          Simulate five lookups
+        </button>
+      </div>
+      <p class="demo-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
+        Saved words go to your personal vocab list, so the words you meet actually become words you know.
+      </p>
+    </div>
+  </section>
+
+    <section class="step" data-step="3" data-role="setup" data-next="Save and continue">
+    <div class="center">
+      <span class="kicker" data-i18n="s3_kicker">Make lookups feel natural</span>
+      <h2>Your reading, <span class="em">uninterrupted.</span></h2>
+      <p class="lede" data-slot="step3Body">Choose how Define triggers and what it shows. You can refine this any time in options.</p>
+      <div class="setup">
+        <div class="opt">
+          <label class="opt-lbl">Show in the definition card</label>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" checked data-field="defs"><span>Definitions</span></label>
+            <label class="chip"><input type="checkbox" checked data-field="pron"><span>Pronunciation</span></label>
+            <label class="chip"><input type="checkbox" data-field="ety"><span>Etymology</span></label>
+          </div>
+        </div>
+        <div class="opt tgls">
+          <div class="tgl-row"><span>Trigger on double-click</span>
+            <label class="tgl"><input type="checkbox" id="opt_toggle1" checked><span class="tgl-s"></span></label></div>
+          <div class="tgl-row"><span>Offer to save new words to my vocab list</span>
+            <label class="tgl"><input type="checkbox" id="opt_toggle2" checked><span class="tgl-s"></span></label></div>
+        </div>
+                <div class="opt" id="defif0f1-perm-prime" hidden data-perm-origins="">
+          <label class="opt-lbl">One permission to switch on</label>
+          <p class="lede" style="font-size:14px;margin:0 0 14px">Grant access so the extension can do its job on the sites you choose. You can revoke it any time from chrome://extensions.</p>
+          <button class="cta" id="defif0f1-btn-grant" type="button">Grant access</button>
+          <p id="defif0f1-perm-status" class="demo-note" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="step" data-step="4" data-next="Continue">
+    <div class="center">
+      <span class="kicker" data-i18n="s4_kicker">Before we talk about money</span>
+      <h2>Built by a person, <span class="em">not a data broker.</span></h2>
+      <p class="lede">Extensions run inside your browser, so you deserve to know exactly who wrote this one and how it treats your data. Here is the honest answer.</p>
+      <div class="receipts">
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>Your data stays on your device</span>
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>Manifest V3, no remote code</span>
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>No account required</span>
+      </div>
+      <div class="founder">
+        <img class="pic" src="assets/founder.png" alt="Michal Lip">
+        <div class="body">
+          <div class="nm">Michal Lip
+            <svg class="verified" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 1.8 3-.2 1 2.8 2.6 1.4-.6 2.9 1.4 2.6-2 2.2.2 3-2.8.9-1.4 2.6-2.9-.7-2.5 1.6-2.5-1.6-2.9.7L6.9 21l-2.8-.9.2-3-2-2.2 1.4-2.6-.6-2.9L5.7 6l1-2.8 3 .2z"/><path d="M10.5 13.5l-2-2L7 13l3.5 3.5L17 10l-1.5-1.5z" fill="#05030f"/></svg>
+            <span class="role">· founder, </span>
+          </div>
+          <p class="cred">Indie developer. I designed, built, and support this extension myself, and I answer my own support email.</p>
+          <div class="socials">
+            <a href="https://github.com/theluckystrike" target="_blank" rel="noopener">github.com/theluckystrike</a>
+            <a href="mailto:support@">support@</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="step" data-step="5" data-role="pricing" data-next="Get Pro">
+    <div class="center">
+      <span class="kicker" data-i18n="s5_kicker">Keep the free core forever</span>
+      <h2>Lookups are free forever. <span class="em">Pro builds the vocabulary.</span></h2>
+      <p class="lede">Free covers unlimited instant definitions. Pro removes the cap on your saved list and exports it to real study tools.</p>
+      <div class="pricing">
+        <div class="pcard">
+                    <div class="founding-ribbon"><span class="fr-dot"></span>Lifetime plan available</div>
+          <div class="seg" id="planSeg" data-upgrade-url=""
+               data-plans='{"lifetime":{"amt":"$99","per":"once","sub":"One payment. Yours forever.","r1":"One-time payment","breakeven":"Costs less than Monthly from month 20 on."},"monthly":{"amt":"$4.99","per":"/ month","sub":"Billed monthly. Cancel anytime.","r1":"Cancel anytime"}}'>
+            <button data-plan="lifetime" class="on">Lifetime <span class="flag">best value</span></button>
+            <button data-plan="monthly">Monthly</button>
+          </div>
+          <div class="price" id="priceRow"><span class="amt" id="priceAmt">$99</span><span class="per" id="pricePer">once</span></div>
+          <div class="price-sub" id="priceSub">One payment. Yours forever.</div>
+          <div class="breakeven" id="breakeven">Costs less than Monthly from month 20 on.</div>
+          <div class="pfeat">
+            <div class="pf"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div><div class="tx"><span class="ttl">Unlimited saved words</span><span>Your vocab list grows as fast as your reading does.</span></div></div>
+            <div class="pf"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><div class="tx"><span class="ttl">Export to CSV and Anki</span><span>Take your words into the flashcard tool where memory happens.</span></div></div>
+            <div class="pf"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><div class="tx"><span class="ttl">Every future Pro update</span><span>Lifetime includes everything Pro this extension ever ships.</span></div></div>
+          </div>
+          <div class="reassure-row">
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg><span id="reassure1">One-time payment</span></span>
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>14-day refund</span>
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>Secure Stripe checkout</span>
+          </div>
+        </div>
+      </div>
+      <div class="faq" id="faq">
+        <div class="faq-item"><button class="faq-q">What does Lifetime actually mean?<span class="pm">+</span></button>
+          <div class="faq-a"><p>One payment, and every Pro feature in this extension is yours for as long as it exists, including future Pro updates. No subscription, no renewal.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Does the free version stay free?<span class="pm">+</span></button>
+          <div class="faq-a"><p>Yes. Everything you saw in this setup stays free forever. Pro only adds the heavier features on top.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What if it does not work for me?<span class="pm">+</span></button>
+          <div class="faq-a"><p>Every purchase has a 14 day refund window. Email support@ and you get your money back, no questions, no forms.</p></div></div>
+      </div>
+          </div>
+  </section>
+
+    <section class="step" data-step="6" data-next="Start reading">
+    <div class="center">
+      <div class="done-ic"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <span class="kicker mint" data-i18n="s6_kicker">You are all set</span>
+      <h2>Read something hard.</h2>
+      <p class="lede">Open any article and double-click the first word you do not know. That is the whole habit.</p>
+      <div class="sc-title">Your daily flow</div>
+      <div class="shortcuts">
+        <div class="sc"><span class="keys"><kbd>Double</kbd><kbd>click</kbd></span>Define any word right on the page</div>
+        <div class="sc"><span class="keys"><kbd>Right-click</kbd></span>on a selection to define a whole phrase</div>
+      </div>
+      <div class="signoff">
+        <div class="signoff-head">
+          <img class="pic" src="assets/founder.png" alt="Michal Lip">
+          <div class="who">
+            <div class="nm">Michal Lip
+              <svg class="verified" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 1.8 3-.2 1 2.8 2.6 1.4-.6 2.9 1.4 2.6-2 2.2.2 3-2.8.9-1.4 2.6-2.9-.7-2.5 1.6-2.5-1.6-2.9.7L6.9 21l-2.8-.9.2-3-2-2.2 1.4-2.6-.6-2.9L5.7 6l1-2.8 3 .2z"/><path d="M10.5 13.5l-2-2L7 13l3.5 3.5L17 10l-1.5-1.5z" fill="#05030f"/></svg>
+            </div>
+            <div class="role">a note from the person who built this</div>
+          </div>
+        </div>
+        <p>I built Define because I kept meeting the same English words twice: once when I guessed, once when I finally looked them up.</p>
+        <p>If a definition is ever wrong or missing, email me the word. The dictionary gets better with every report.</p>
+        <div class="sig">Michal</div>
+        <div class="reach">
+          <a href="https://github.com/theluckystrike" target="_blank" rel="noopener">github.com/theluckystrike</a>
+          <a href="mailto:support@">support@</a>
+        </div>
+        <p class="ps">P.S. Your vocab list lives in your browser. Your reading habits are not my data.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="navbar">
+  <div class="navbar-in">
+    <button class="nbtn back" id="backBtn" hidden>
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Back
+    </button>
+    <div class="indicator">
+      <span class="counter" id="counter">01 / 06</span>
+      <div class="dots" id="dots">
+        <button class="dot active" data-step="1" aria-label="Step 1"></button>
+        <button class="dot" data-step="2" aria-label="Step 2"></button>
+        <button class="dot" data-step="3" aria-label="Step 3"></button>
+        <button class="dot" data-step="4" aria-label="Step 4"></button>
+        <button class="dot" data-step="5" aria-label="Step 5"></button>
+        <button class="dot" data-step="6" aria-label="Step 6"></button>
+      </div>
+    </div>
+    <button class="nbtn next" id="nextBtn">
+      <span id="nextLabel">Show me</span>
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="onboarding.js"></script>
+</body>
+</html>

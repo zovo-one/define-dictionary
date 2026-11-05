@@ -1,0 +1,280 @@
+{
+  "extName": {
+    "message": "Define — Double-Click Dictionary & Vocab Builder",
+    "description": "Extension name shown in chrome://extensions and the Chrome Web Store listing."
+  },
+  "extDesc": {
+    "message": "Double-click any word for an instant definition, IPA & example. Save words, study with spaced repetition. BYOK LLM explain.",
+    "description": "Short description shown in chrome://extensions and the Chrome Web Store listing."
+  },
+  "heroWordsSaved": {
+    "message": "$n$ Words Saved",
+    "description": "Hero stat label: count of saved words. $n$ is replaced at runtime with the count.",
+    "placeholders": {
+      "n": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "heroMastered": {
+    "message": "$n$ Mastered",
+    "description": "Hero stat label: count of mastered words. $n$ is replaced at runtime with the count.",
+    "placeholders": {
+      "n": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "searchPlaceholder": {
+    "message": "Search saved words...",
+    "description": "Placeholder text in the popup's saved-words search input."
+  },
+  "sortDate": {
+    "message": "Recent",
+    "description": "Sort-bar button: sort saved words by date saved (most recent first)."
+  },
+  "sortAlpha": {
+    "message": "A-Z",
+    "description": "Sort-bar button: sort saved words alphabetically."
+  },
+  "sortMastery": {
+    "message": "Mastery",
+    "description": "Sort-bar button: sort saved words by mastery level (highest first)."
+  },
+  "emptyTitle": {
+    "message": "Double-click any word to start your list",
+    "description": "Empty-state headline shown in the popup when the user has no saved words."
+  },
+  "emptyBody": {
+    "message": "Your saved words will appear here. Double-click any word on any page to define and save it.",
+    "description": "Empty-state body copy explaining how to start saving words."
+  },
+  "triggerDblclick": {
+    "message": "Double-click to define",
+    "description": "Toggle-switch label in popup settings: enable double-click trigger."
+  },
+  "triggerContext": {
+    "message": "Right-click menu",
+    "description": "Toggle-switch label in popup settings: enable right-click context menu trigger."
+  },
+  "targetLang": {
+    "message": "Target language: $lang$",
+    "description": "Popup setting row label. $lang$ is replaced at runtime with the language name (e.g. 'French').",
+    "placeholders": {
+      "lang": {
+        "content": "$1",
+        "example": "French"
+      }
+    }
+  },
+  "byokKeyLabel": {
+    "message": "BYOK API key",
+    "description": "Popup setting row label for the BYOK API key input."
+  },
+  "byokTest": {
+    "message": "Test",
+    "description": "BYOK key test button label (idle state)."
+  },
+  "byokTesting": {
+    "message": "Testing…",
+    "description": "BYOK key test button label while a test request is in flight."
+  },
+  "byokOk": {
+    "message": "✓ OK",
+    "description": "BYOK key test button label after a successful test."
+  },
+  "byokErr": {
+    "message": "Retry",
+    "description": "BYOK key test button label after a failed test."
+  },
+  "upgradeCta": {
+    "message": "Upgrade to Pro — $$99 once",
+    "description": "Popup upgrade CTA button text."
+  },
+  "wordsCount": {
+    "message": "$n$ of $cap$ words",
+    "description": "Saved-words counter. $n$ is current count, $cap$ is the tier limit (50 for Free).",
+    "placeholders": {
+      "n": {
+        "content": "$1",
+        "example": "12"
+      },
+      "cap": {
+        "content": "$2",
+        "example": "50"
+      }
+    }
+  },
+  "masteredLabel": {
+    "message": "Mastered",
+    "description": "Label shown next to the mastered count in the hero stat and elsewhere."
+  },
+  "optDictSource": {
+    "message": "Dictionary Source",
+    "description": "Options page section title: dictionary source picker."
+  },
+  "optTargetLang": {
+    "message": "Translate mode target",
+    "description": "Options page setting label: target language for translate mode (Pro)."
+  },
+  "optTheme": {
+    "message": "Theme",
+    "description": "Options page section title: appearance / theme picker."
+  },
+  "themeLight": {
+    "message": "Light",
+    "description": "Theme button: light mode."
+  },
+  "themeDark": {
+    "message": "Dark",
+    "description": "Theme button: dark mode."
+  },
+  "themeAuto": {
+    "message": "System",
+    "description": "Theme button: follow system preference."
+  },
+  "optByokTitle": {
+    "message": "BYOK / LLM",
+    "description": "Options page section title: BYOK / LLM configuration."
+  },
+  "optByokProvider": {
+    "message": "Provider",
+    "description": "Options page BYOK setting label: LLM provider dropdown."
+  },
+  "optByokModel": {
+    "message": "Model",
+    "description": "Options page BYOK setting label: model name input."
+  },
+  "optByokEndpoint": {
+    "message": "Custom endpoint URL",
+    "description": "Options page BYOK setting label: custom endpoint URL input (shown only when provider is 'custom')."
+  },
+  "optExportTitle": {
+    "message": "Export Study List",
+    "description": "Options page card title: export study list."
+  },
+  "exportCsv": {
+    "message": "Download CSV",
+    "description": "Options page button: export saved words as CSV."
+  },
+  "exportAnki": {
+    "message": "Download Anki TSV",
+    "description": "Options page button: export saved words as Anki-importable TSV."
+  },
+  "optReviewTitle": {
+    "message": "Spaced Repetition",
+    "description": "Options page card title: spaced repetition settings."
+  },
+  "optLicenseTitle": {
+    "message": "License",
+    "description": "Options page section title: license manager."
+  },
+  "licensePlaceholder": {
+    "message": "DEFI-XXXX-XXXX-XXXX-XXXX",
+    "description": "Placeholder text for the license key input."
+  },
+  "licenseActivate": {
+    "message": "Activate",
+    "description": "License activation button label."
+  },
+  "licenseVerifying": {
+    "message": "Verifying…",
+    "description": "License activation button label while verification is in flight (also used as a11y label for the spinner)."
+  },
+  "licenseOk": {
+    "message": "Activated",
+    "description": "License activation success state label."
+  },
+  "licenseErr": {
+    "message": "Invalid key",
+    "description": "License activation failure message (fallback when the SW does not return a specific error)."
+  },
+  "onboardingHero": {
+    "message": "Welcome to Define",
+    "description": "Onboarding step 1 headline."
+  },
+  "onboardingHeroBody": {
+    "message": "Double-click any word. Get an instant definition, IPA, and example — without leaving the page.",
+    "description": "Onboarding step 1 body copy."
+  },
+  "onboardingStep1": {
+    "message": "Get Started",
+    "description": "Onboarding step 1 primary button: advance to step 2."
+  },
+  "onboardingStep2": {
+    "message": "Continue",
+    "description": "Onboarding step 2 primary button: advance to step 3."
+  },
+  "onboardingStep3": {
+    "message": "Start using Define",
+    "description": "Onboarding step 3 primary button: finish onboarding."
+  },
+  "onboardingPrivacy": {
+    "message": "Dictionary lookups hit dictionaryapi.dev only. BYOK LLM calls go directly to YOUR endpoint — never sees your key.",
+    "description": "Onboarding privacy callout copy. Names the only third-party dictionary host and reaffirms that BYOK keys never touch  servers."
+  },
+  "onboardingEnableBroad": {
+    "message": "Enable double-click on all sites",
+    "description": "Onboarding step 2 permission priming: strong text on the grant card."
+  },
+  "onboardingBroadGranted": {
+    "message": "Double-click enabled on all sites.",
+    "description": "Onboarding step 2 permission status message: success after the user grants broad host access."
+  },
+  "onboardingBroadDenied": {
+    "message": "Not enabled — Define still works when you click the toolbar icon.",
+    "description": "Onboarding step 2 permission status message: shown when the user denies broad host access."
+  },
+  "cardPlayAudio": {
+    "message": "▶ Pronounce",
+    "description": "Content-script definition card: audio playback button label."
+  },
+  "cardSave": {
+    "message": "Save word",
+    "description": "Content-script definition card: save-word button label."
+  },
+  "cardSaved": {
+    "message": "Saved",
+    "description": "Content-script definition card: transient success label shown after a word is saved."
+  },
+  "cardClose": {
+    "message": "Close",
+    "description": "Content-script definition card: close button label."
+  },
+  "cardNotFound": {
+    "message": "Select a single word to define.",
+    "description": "Content-script definition card: shown when the selection is empty or spans multiple words."
+  },
+  "cardTimeout": {
+    "message": "Dictionary lookup timed out. Try again.",
+    "description": "Content-script definition card: shown when the dictionary request exceeds the timeout."
+  },
+  "cardNetworkErr": {
+    "message": "Could not reach the dictionary.",
+    "description": "Content-script definition card: shown when the dictionary request fails with a network/transport error."
+  },
+  "cardByokMissing": {
+    "message": "Add your BYOK API key in Settings to use explain-in-context.",
+    "description": "Content-script definition card: shown when the user invokes explain-in-context without a configured BYOK key."
+  },
+  "cardExplainContext": {
+    "message": "Explain in context",
+    "description": "Content-script definition card: button label for the BYOK explain-in-context action (Pro)."
+  },
+  "paywallReframe": {
+    "message": "$$99 once vs $$9/mo forever",
+    "description": "Paywall overlay reframe line: one-time price vs typical monthly subscription."
+  },
+  "paywallGuarantee": {
+    "message": "$n$-day money-back guarantee",
+    "description": "Paywall overlay guarantee line. $n$ is replaced at runtime.",
+    "placeholders": {
+      "n": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  }
+}
